@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-</style>
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
-</style>
 
 *{
 	margin: 0;
@@ -28,22 +24,31 @@
 
 	}
 	.jumbotron h2 {
+		font-family: 'Anton', sans-serif;
+		
 		display: inline-block;
 		background-color: #9c251c;
 		padding: 3px 10px;
+		font-weight: 900;
+		letter-spacing: -2px;
+		-webkit-text-stroke: 0.1px black;
 	}
 	section  {
 		background-color: #121111;
-		height: 90vh;
+		height: 100vh;
 	}
 	section .container-fluid #second {
-		margin-top: 30px;
+		margin-top: 10px;
 		padding: 10px;
 		text-align: justify;
+		border-bottom: 7px solid #9c251c;
+		border-top: 7px solid #9c251c;
+		
+
 	}
 	article .container-fluid{
 		background-color: black;
-		height: 110vh;
+		height: 105vh;
 	}
 	article .container-fluid .row .col {
 		background-color: #2b2a2a;
@@ -52,6 +57,10 @@
 	article #project1,#project2,#project3{
 		border: 1px solid white;
 		border-radius: 20px;
+	}
+	article #proj{
+		padding-top: 30px;
+		padding-bottom: 20px;
 	}
 	.c-form{
 		height: 130vh;
@@ -88,11 +97,18 @@
 		}
 		section  {
 			background-color: #1c1b1b;
-			height: 140vh;
+			height: 170vh;
 		}
 		article .container-fluid{
 			background-color: black;
-			height: 220vh;
+			height: 245vh;
+		}
+		article p {
+			width: 350px;
+			margin: 0pc auto;
+		}
+		article #proj{
+			padding-top: 0;
 		}
 		.c-form{
 			height: 130vh;
@@ -118,14 +134,21 @@
 		}
 		section  {
 			background-color: #1c1b1b;
-			height: 80vh;
+			height: 95vh;
 		}
 		article .container-fluid{
 			background-color: black;
-			height: 120vh;
+			height: 140vh;
+		}
+		article p {
+			width: 350px;
+			margin: 0pc auto;
+		}
+		article #proj{
+			padding-top: 0;
 		}
 		.c-form{
-			height: 115vh;
+			height: 105vh;
 			background-color: #121111;
 		}
 
@@ -135,6 +158,9 @@
 		display: inline-block;
 		background-color: #9c251c;
 		padding: 3px 10px;
+		font-weight: 900;
+		letter-spacing: -2px;
+		-webkit-text-stroke: 0.1px black;
 	}
 
 	
@@ -156,6 +182,9 @@
 		
 		
 	}
+	article #proj{
+		padding-top: 100px;
+	}
 	article #project1,#project2{
 		border-bottom: 1px solid white;
 		margin: auto;
@@ -163,21 +192,13 @@
 	article #project3 {
 		margin: auto;
 	}
-	.social-media {
-		display: flex;
-		justify-content: center;
-	}
-	.social-media a {
-		margin: 1px;
-	}
-
 }
 
 @media screen and (max-width: 494px){
 
 	.jumbotron {
 		background-image: url(bg2.png);
-		height: 100vh;
+		height: 110vh;
 		background-size: cover;
 		background-position: center;
 		color: white;
@@ -193,6 +214,8 @@
 		display: inline-block;
 		background-color: transparent;
 		padding: 3px 10px;
+		font-weight: 900;
+		-webkit-text-stroke: 0.1px black;
 	}
 	.jumbotron span{
 		display: inline-block;
@@ -203,13 +226,14 @@
 	}
 	section  {
 		background-color: #1c1b1b;
-		height: 150vh;
+		height: 140vh;
 	}
 	
 	section .container-fluid #second {
 		margin-top: 30px;
 		padding: 10px;
 		text-align: justify;
+		background-color: #1c1b1b;
 	}
 	section p{
 		width: auto;
@@ -223,6 +247,10 @@
 		border: 1px solid white;
 		
 	}
+	article p {
+			width: auto;
+			
+		}
 	@media screen and (max-height: 650px) {
 		article .container-fluid{
 			background-color: black;
@@ -232,11 +260,11 @@
 	@media screen and (min-height: 578px) {
 		article .container-fluid{
 			background-color: black;
-			height: 230vh;
+			height: 240vh;
 		}
 	}
 	.c-form{
-		height: 130vh;
+		height: 125vh;
 		background-color: #121111;
 	}
 	.social-media {
@@ -245,15 +273,14 @@
 	}
 
 }
-
-nav div a{
-	font-size: 20px;
-	color: white;
+.navbar {
+	background-color: #141310;
 }
-nav div a:hover {
-	color: #000000;
-	border: white;
-	background-color: white;
+nav .navbar-toggler {
+	background-color: #61605f;
+}
+nav #navbarNav a{
+	margin-left: 10px;
 }
 section .container-fluid .row #img img {
 	border-radius: 10%;
@@ -279,11 +306,12 @@ footer .text-center a {
 	text-decoration: none;
 }
 header h1 {
-	font-size: 50px;
+	font-size: 70px;
 	font-family: 'Anton', sans-serif;
-	font-weight: 1000;
+	font-weight: 900;
 	margin-left: -10px;
 	color: transparent;
+	letter-spacing: 5px;
 	-webkit-text-stroke: 1px white;
 	background-image: url(Icons/layout.png);
 	-webkit-background-clip: text;
@@ -298,17 +326,56 @@ header h1 {
 
 }
 
-section .aboutme {
-	display: inline-block;
+section .aboutme h2 {
+	font-family: 'Anton', sans-serif;
+	display: block;
 	color: #c4bf49;
 	text-transform: uppercase;
 	font-weight: 900;
-	font-size: 40px;
-	background-color: #c4bf49;
-	border border-radius: 30%;
-	-webkit-text-stroke: 0.2px  white;
-	text-shadow: 2px red;
-	height: 5px;
-	margin: 0px;
-	padding: 0px;
+	font-size: 70px;
+	-webkit-text-stroke: 0.2px  black;
+	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+	text-decoration: underline #9c251c;
+}
+article h2 {
+	font-family: 'Anton', sans-serif;
+	display: block;
+	color: #c4bf49;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 70px;
+	-webkit-text-stroke: 0.2px  black;
+	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+	text-decoration: underline #9c251c;
+}
+.c-form h2 {
+	font-family: 'Anton', sans-serif;
+	display: block;
+	color: #c4bf49;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 70px;
+	-webkit-text-stroke: 0.2px  black;
+	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+	text-decoration: underline #9c251c;
+
+}
+
+.Download {
+	font-size: 14px;
+	text-decoration: underline;
+	display: flex;
+	justify-content: safe center;
+
+}
+#download-button{
+	border-radius: 20px;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	background-color: #9c251c;
+	color: #c4bf49;
+}
+article h4{
+	text-decoration: underline;
 }
