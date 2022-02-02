@@ -1,382 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Merriweather', serif;
-	color: white;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  color: white;
 }
 @media screen and (min-width: 986px) {
-	.jumbotron {
-		background-image: url(bg1.png);
-		height: 100vh;
-		background-size: cover;
-		background-position: right;
-		color: white;
-		border-radius: 0px!important; 
-		margin-bottom: 0px;
-		
-	}
-	.jumbotron #caption .intro {
-		margin-top: 100px;
+  .jumbotron {
+    background-image: url(bg1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    color: white;
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+  }
+  .jumbotron #caption .intro {
+    margin-top: 100px;
+  }
+  .jumbotron h2 {
+    font-family: "Anton", sans-serif;
 
-	}
-	.jumbotron h2 {
-		font-family: 'Anton', sans-serif;
-		
-		display: inline-block;
-		background-color: #9c251c;
-		padding: 3px 10px;
-		font-weight: 900;
-		letter-spacing: -2px;
-		-webkit-text-stroke: 0.1px black;
-	}
-	section  {
-		background-color: #121111;
-		height: 100vh;
-	}
-	section .container-fluid #second {
-		margin-top: 10px;
-		padding: 10px;
-		text-align: justify;
-		border-bottom: 7px solid #9c251c;
-		border-top: 7px solid #9c251c;
-		
-
-	}
-	article .container-fluid{
-		background-color: black;
-		height: 105vh;
-	}
-	article .container-fluid .row .col {
-		background-color: #2b2a2a;
-		
-	}
-	article #project1,#project2,#project3{
-		
-		border: 1px solid white;
-		border-radius: 20px;
-	}
-	article #proj{
-		padding-top: 30px;
-		padding-bottom: 20px;
-	}
-	.c-form{
-		height: 130vh;
-		background-color: #121111;
-	}
-	.social-media {
-		display: flex;
-		justify-content: center;
-	}
-	.social-media a {
-		margin: 10px;
-	}
-
-
+    display: inline-block;
+    background-color: #9c251c;
+    padding: 3px 10px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 0.1px black;
+  }
+  section {
+    background-color: #121111;
+    height: 100vh;
+  }
+  section .container-fluid #second {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom: 7px solid #9c251c;
+    border-top: 7px solid #9c251c;
+  }
+  article .container-fluid {
+    background-color: black;
+    height: 105vh;
+  }
+  article .container-fluid .row .col {
+    background-color: #2b2a2a;
+  }
+  article #project1,
+  #project2,
+  #project3 {
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  article #proj {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .c-form {
+    height: 130vh;
+    background-color: #121111;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media a {
+    margin: 10px;
+  }
 }
 
+@media screen and (max-width: 986px) {
+  @media screen and (max-height: 600px) {
+    .jumbotron {
+      background-image: url(bg2.png);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      border-radius: 0px !important;
+      margin-bottom: 0px;
+    }
+    .jumbotron #caption .intro {
+      margin-top: 150px;
+    }
+    section {
+      background-color: #1c1b1b;
+      height: 170vh;
+    }
+    article .container-fluid {
+      background-color: black;
+      height: 245vh;
+    }
+    article p {
+      width: 350px;
+      margin: 0pc auto;
+    }
+    article #proj {
+      padding-top: 0;
+    }
+    .c-form {
+      height: 130vh;
+      background-color: #121111;
+    }
+  }
+  @media screen and (min-height: 600px) {
+    .jumbotron {
+      background-image: url(bg2.png);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      border-radius: 0px !important;
+      margin-bottom: 0px;
+    }
+    .jumbotron #caption .intro {
+      margin-top: 280px;
+    }
+    section {
+      background-color: #1c1b1b;
+      height: 95vh;
+    }
+    article .container-fluid {
+      background-color: black;
+      height: 140vh;
+    }
+    article p {
+      width: 350px;
+      margin: 0pc auto;
+    }
+    article #proj {
+      padding-top: 0;
+    }
+    .c-form {
+      height: 105vh;
+      background-color: #121111;
+    }
+  }
+  .jumbotron h2 {
+    display: inline-block;
+    background-color: #9c251c;
+    padding: 3px 10px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 0.1px black;
+  }
 
-@media screen and  (max-width:  986px){
-	
-	@media screen and (max-height: 600px){
-		.jumbotron {
-			background-image: url(bg2.png);
-			height: 100vh;
-			background-size: cover;
-			background-position: center;
-			color: white;
-			border-radius: 0px!important; 
-			margin-bottom: 0px;
-			
-		}
-		.jumbotron #caption .intro {
-			margin-top: 150px;
+  section .container-fluid #second {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: justify;
+  }
+  section p {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-		}
-		section  {
-			background-color: #1c1b1b;
-			height: 170vh;
-		}
-		article .container-fluid{
-			background-color: black;
-			height: 245vh;
-		}
-		article p {
-			width: 350px;
-			margin: 0pc auto;
-		}
-		article #proj{
-			padding-top: 0;
-		}
-		.c-form{
-			height: 130vh;
-			background-color: #121111;
-		}
-		
-		
-	}
-	@media screen and (min-height: 600px){
-		.jumbotron {
-			background-image: url(bg2.png);
-			height: 100vh;
-			background-size: cover;
-			background-position: center;
-			color: white;
-			border-radius: 0px!important; 
-			margin-bottom: 0px;
-			
-		}
-		.jumbotron #caption .intro {
-			margin-top: 280px;
-
-		}
-		section  {
-			background-color: #1c1b1b;
-			height: 95vh;
-		}
-		article .container-fluid{
-			background-color: black;
-			height: 140vh;
-		}
-		article p {
-			width: 350px;
-			margin: 0pc auto;
-		}
-		article #proj{
-			padding-top: 0;
-		}
-		.c-form{
-			height: 105vh;
-			background-color: #121111;
-		}
-
-		
-	}
-	.jumbotron h2 {
-		display: inline-block;
-		background-color: #9c251c;
-		padding: 3px 10px;
-		font-weight: 900;
-		letter-spacing: -2px;
-		-webkit-text-stroke: 0.1px black;
-	}
-
-	
-	section .container-fluid #second {
-		margin-top: 30px;
-		padding: 10px;
-		text-align: justify;
-	}
-	section p{
-		width: 400px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	article .container-fluid .row .col {
-		background-color: #2b2a2a;
-	}
-	article p{
-		
-		
-	}
-	article #proj{
-		padding-top: 100px;
-	}
-	article #project1,#project2{
-		border-bottom: 1px solid white;
-		margin: auto;
-	}
-	article #project3 {
-		margin: auto;
-	}
+  article .container-fluid .row .col {
+    background-color: #2b2a2a;
+  }
+  article p {
+  }
+  article #proj {
+    padding-top: 100px;
+  }
+  article #project1,
+  #project2 {
+    border-bottom: 1px solid white;
+    margin: auto;
+  }
+  article #project3 {
+    margin: auto;
+  }
 }
 
-@media screen and (max-width: 494px){
+@media screen and (max-width: 494px) {
+  .jumbotron {
+    background-image: url(bg2.png);
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+  }
+  .jumbotron #caption .intro {
+    margin-top: 50px;
+  }
+  .jumbotron h2 {
+    display: inline-block;
+    background-color: transparent;
+    padding: 3px 10px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.1px black;
+  }
+  .jumbotron span {
+    display: inline-block;
+    background-color: #9c251c;
+    margin: 3px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  section {
+    background-color: #1c1b1b;
+    height: 140vh;
+  }
 
-	.jumbotron {
-		background-image: url(bg2.png);
-		height: 110vh;
-		background-size: cover;
-		background-position: center;
-		color: white;
-		border-radius: 0px!important; 
-		margin-bottom: 0px;
-		
-	}
-	.jumbotron #caption .intro {
-		margin-top: 50px;
-
-	}
-	.jumbotron h2{
-		display: inline-block;
-		background-color: transparent;
-		padding: 3px 10px;
-		font-weight: 900;
-		-webkit-text-stroke: 0.1px black;
-	}
-	.jumbotron span{
-		display: inline-block;
-		background-color: #9c251c;
-		margin: 3px 0px;
-		padding: 5px 10px;
-		border-radius: 10px;
-	}
-	section  {
-		background-color: #1c1b1b;
-		height: 140vh;
-	}
-	
-	section .container-fluid #second {
-		margin-top: 30px;
-		padding: 10px;
-		text-align: justify;
-		background-color: #1c1b1b;
-	}
-	section p{
-		width: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	article .container-fluid .row .col {
-		background-color: #2b2a2a;
-	}
-	article #project1,#project2,#project3{
-		border: 1px solid white;
-		
-	}
-	article p {
-			width: auto;
-			
-		}
-	@media screen and (max-height: 650px) {
-		article .container-fluid{
-			background-color: black;
-			height: 260vh;
-		}
-	}
-	@media screen and (min-height: 578px) {
-		article .container-fluid{
-			background-color: black;
-			height: 240vh;
-		}
-	}
-	.c-form{
-		height: 125vh;
-		background-color: #121111;
-	}
-	.social-media {
-		display: flex;
-		align-items: center;
-	}
-
+  section .container-fluid #second {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: justify;
+    background-color: #1c1b1b;
+  }
+  section p {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article .container-fluid .row .col {
+    background-color: #2b2a2a;
+  }
+  article #project1,
+  #project2,
+  #project3 {
+    border: 1px solid white;
+  }
+  article p {
+    width: auto;
+  }
+  @media screen and (max-height: 650px) {
+    article .container-fluid {
+      background-color: black;
+      height: 260vh;
+    }
+  }
+  @media screen and (min-height: 578px) {
+    article .container-fluid {
+      background-color: black;
+      height: 240vh;
+    }
+  }
+  .c-form {
+    height: 125vh;
+    background-color: #121111;
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+  }
 }
 .navbar {
-	background-color: #141310;
+  background-color: #141310;
 }
 nav .navbar-toggler {
-	background-color: #61605f;
+  background-color: #61605f;
 }
-nav #navbarNav a{
-	margin-left: 10px;
+nav #navbarNav a {
+  margin-left: 10px;
 }
 section .container-fluid .row #img img {
-	border-radius: 10%;
-	border: 2px solid;
+  border-radius: 10%;
+  border: 2px solid;
 }
 #form {
-	background-color: black;
+  background-color: black;
 }
-footer section{
-	height: 50px;
-	background-color: black;
-	margin-bottom: 0px;
+footer section {
+  height: 50px;
+  background-color: black;
+  margin-bottom: 0px;
 }
 
 footer {
-	background-color: black;
+  background-color: black;
 }
 footer section a:hover {
-	border: 1px solid white;
-	border-radius: 50%;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 footer .text-center a {
-	text-decoration: none;
+  text-decoration: none;
 }
 header h1 {
-	font-size: 70px;
-	font-family: 'Anton', sans-serif;
-	font-weight: 900;
-	margin-left: -10px;
-	color: transparent;
-	letter-spacing: 5px;
-	-webkit-text-stroke: 1px white;
-	background-image: url(Icons/layout.png);
-	-webkit-background-clip: text;
-	background-position: 0 0;
-	animation: bg 20s infinite;
-
+  font-size: 70px;
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  margin-left: -10px;
+  color: transparent;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px white;
+  background-image: url(Icons/layout.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: bg 20s infinite;
 }
 @keyframes bg {
-	100%{
-		background-position: 2000px 0;
-	}
-
+  100% {
+    background-position: 2000px 0;
+  }
 }
 
 section .aboutme h2 {
-	font-family: 'Anton', sans-serif;
-	display: block;
-	color: #c4bf49;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 70px;
-	-webkit-text-stroke: 0.2px  black;
-	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
-	text-decoration: underline #9c251c;
+  font-family: "Anton", sans-serif;
+  display: block;
+  color: #c4bf49;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 70px;
+  -webkit-text-stroke: 0.2px black;
+  text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+  text-decoration: underline #9c251c;
 }
 article h2 {
-	font-family: 'Anton', sans-serif;
-	display: block;
-	color: #c4bf49;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 70px;
-	-webkit-text-stroke: 0.2px  black;
-	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
-	text-decoration: underline #9c251c;
+  font-family: "Anton", sans-serif;
+  display: block;
+  color: #c4bf49;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 70px;
+  -webkit-text-stroke: 0.2px black;
+  text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+  text-decoration: underline #9c251c;
 }
 .c-form h2 {
-	font-family: 'Anton', sans-serif;
-	display: block;
-	color: #c4bf49;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 70px;
-	-webkit-text-stroke: 0.2px  black;
-	text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
-	text-decoration: underline #9c251c;
-
+  font-family: "Anton", sans-serif;
+  display: block;
+  color: #c4bf49;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 70px;
+  -webkit-text-stroke: 0.2px black;
+  text-shadow: 1px 1px 3px red, 0 0 1em #5e5e50, 0 0 0.2em #5e5e50;
+  text-decoration: underline #9c251c;
 }
 
 .Download {
-	font-size: 14px;
-	text-decoration: underline;
-	display: flex;
-	justify-content: safe center;
-
+  font-size: 14px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: safe center;
 }
-#download-button{
-	border-radius: 20px;
-	padding: 10px;
-	display: block;
-	margin: 0 auto;
-	background-color: #9c251c;
-	color: #c4bf49;
+#download-button {
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  background-color: #9c251c;
+  color: #c4bf49;
 }
-article h4{
-	text-decoration: underline;
+article h4 {
+  text-decoration: underline;
+}
+.project1 {
+  height: 350px;
+}
+.title {
+  color: #121111;
+  font-weight: bolder;
+}
+.paragraph {
+  color: #121111;
 }
